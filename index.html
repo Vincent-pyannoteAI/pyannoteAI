@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyannote AI × Google Cloud | Speaker Diarization Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="background">
+        <div class="gradient-circle"></div>
+        <div class="gradient-circle"></div>
+        <div class="gradient-circle"></div>
+    </div>
+
+    <!-- Main container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="glass-card header">
+            <div class="logo-section">
+                <div class="logo">
+                    <i class="fas fa-microphone-alt"></i>
+                    <h1>Pyannote<span class="ai">AI</span></h1>
+                </div>
+                <div class="google-cloud-badge">
+                    <span class="gcp-text">Google Cloud</span>
+                    <span class="gcp-badge">Integrated</span>
+                </div>
+            </div>
+            <nav>
+                <a href="#overview">Overview</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#integration">Integration</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero glass-card">
+            <div class="hero-content">
+                <h2>Advanced Speaker Diarization <span class="highlight">Powered by Google Cloud</span></h2>
+                <p class="subtitle">Accurately identify and segment speakers in audio recordings with our fully integrated Google Cloud solution</p>
+                <div class="tech-stack">
+                    <span class="tech-tag"><i class="fab fa-google"></i> Speech-to-Text API</span>
+                    <span class="tech-tag"><i class="fas fa-cloud"></i> Cloud Functions</span>
+                    <span class="tech-tag"><i class="fas fa-database"></i> BigQuery</span>
+                    <span class="tech-tag"><i class="fas fa-brain"></i> Vertex AI</span>
+                    <span class="tech-tag"><i class="fas fa-server"></i> GKE & Cloud Run</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="pulse-circle">
+                    <i class="fas fa-assistive-listening-systems"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section id="overview" class="glass-card section-card">
+            <h3><i class="fas fa-info-circle"></i> Solution Overview</h3>
+            <p>Pyannote AI develops cutting-edge speaker diarization technology that accurately identifies and segments speakers in audio recordings. Our Google Cloud-integrated platform transforms conversations into actionable insights.</p>
+            
+            <div class="feature-grid">
+                <div class="feature glass-card-small">
+                    <i class="fas fa-users"></i>
+                    <h4>Speaker Identification</h4>
+                    <p>Precisely distinguish between speakers in meetings, calls, and interviews</p>
+                </div>
+                <div class="feature glass-card-small">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Conversation Analytics</h4>
+                    <p>Extract valuable metrics and insights from dialogue patterns</p>
+                </div>
+                <div class="feature glass-card-small">
+                    <i class="fas fa-random"></i>
+                    <h4>Seamless Integration</h4>
+                    <p>Works within your existing Google Cloud workflow and infrastructure</p>
+                </div>
+                <div class="feature glass-card-small">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Enterprise Ready</h4>
+                    <p>Secure, compliant, and scalable within your GCP project</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Section -->
+        <section id="architecture" class="glass-card section-card">
+            <h3><i class="fas fa-project-diagram"></i> Google Cloud Architecture</h3>
+            <p>Our solution leverages Google Cloud's full stack for a scalable, event-driven pipeline:</p>
+            
+            <div class="architecture-flow">
+                <div class="flow-step">
+                    <div class="step-icon">
+                        <i class="fas fa-file-upload"></i>
+                    </div>
+                    <h5>1. Upload</h5>
+                    <p>Audio files uploaded to <strong>Google Cloud Storage</strong></p>
+                </div>
+                
+                <div class="flow-arrow">→</div>
+                
+                <div class="flow-step">
+                    <div class="step-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h5>2. Trigger</h5>
+                    <p><strong>Cloud Pub/Sub</strong> triggers <strong>Cloud Functions</strong></p>
+                </div>
+                
+                <div class="flow-arrow">→</div>
+                
+                <div class="flow-step">
+                    <div class="step-icon">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <h5>3. Transcribe</h5>
+                    <p><strong>Speech-to-Text API</strong> with diarization enabled</p>
+                </div>
+                
+                <div class="flow-arrow">→</div>
+                
+                <div class="flow-step">
+                    <div class="step-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h5>4. Enrich</h5>
+                    <p>Pyannote AI models on <strong>GKE/Cloud Run</strong></p>
+                </div>
+                
+                <div class="flow-arrow">→</div>
+                
+                <div class="flow-step">
+                    <div class="step-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h5>5. Analyze</h5>
+                    <p>Store in <strong>BigQuery</strong>, visualize in <strong>Looker Studio</strong></p>
+                </div>
+            </div>
+            
+            <div class="integration-details">
+                <div class="detail-box">
+                    <h4><i class="fab fa-google"></i> Google Cloud Services Used</h4>
+                    <ul>
+                        <li>Google Cloud Storage (GCS)</li>
+                        <li>Cloud Functions & Cloud Run</li>
+                        <li>Google Cloud Speech-to-Text API</li>
+                        <li>BigQuery & Looker Studio</li>
+                        <li>Vertex AI & GKE</li>
+                        <li>Cloud IAM & Pub/Sub</li>
+                    </ul>
+                </div>
+                <div class="detail-box">
+                    <h4><i class="fas fa-cogs"></i> Pyannote AI Value Add</h4>
+                    <ul>
+                        <li>Enhanced speaker recognition accuracy</li>
+                        <li>Emotional tone & sentiment analysis</li>
+                        <li>Custom model training via Vertex AI</li>
+                        <li>Real-time and batch processing</li>
+                        <li>Industry-specific conversation templates</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Integration Benefits -->
+        <section id="integration" class="glass-card section-card">
+            <h3><i class="fas fa-handshake"></i> Integration Benefits</h3>
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h4>Data Sovereignty</h4>
+                    <p>All processing occurs within your Google Cloud project, ensuring compliance and security.</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h4>Automatic Scaling</h4>
+                    <p>Leverage Google Cloud's serverless architecture to handle any volume of audio files.</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h4>Real-time Analytics</h4>
+                    <p>Get insights within minutes of upload with our optimized pipeline.</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">
+                        <i class="fas fa-euro-sign"></i>
+                    </div>
+                    <h4>Cost Effective</h4>
+                    <p>Pay-per-use model with no upfront infrastructure costs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="glass-card section-card">
+            <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+            <p>Learn more about our Google Cloud integrated speaker diarization solution.</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <div>
+                        <h4>Website</h4>
+                        <a href="https://pyannote.xyz" target="_blank">https://pyannote.xyz</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:vincent@pyannote.xyz">vincent@pyannote.xyz</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Paris, France</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-cloud"></i>
+                    <div>
+                        <h4>Solution Status</h4>
+                        <p class="status-badge">Available on Google Cloud</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta">
+                <p class="cta-text">Ready to transform your audio analysis with Google Cloud?</p>
+                <a href="mailto:vincent@pyannote.xyz?subject=Google Cloud Solution Inquiry" class="cta-button">
+                    <i class="fab fa-google"></i> Request Solution Qualification
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="glass-card footer">
+            <p>© 2024 Pyannote AI. Speaker Diarization Technology powered by Google Cloud.</p>
+            <p class="footer-note">This solution is fully integrated within Google Cloud infrastructure.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
